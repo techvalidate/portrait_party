@@ -1,0 +1,3 @@
+= portrait_party
+
+portrait_party is a wrapper for John Nunemaker's {HTTParty}[http://github.com/jnunemaker/httparty]. First you'll need an account on a {portrait}[http://github.com/jmckible/portrait] instance.
