@@ -1,3 +1,14 @@
 = portrait_party
 
 portrait_party is a wrapper for John Nunemaker's {HTTParty}[http://github.com/jnunemaker/httparty]. First you'll need an account on a {portrait}[http://github.com/jmckible/portrait] instance.
+
+First, setup the Portrait class with your server and credentials
+
+  Portrait.url "portrait.mydomain.com"
+  Portrait.authorize 'username', 'password'
+  
+The fire away:
+
+  Portrait.capture 'http://domain.tocaputure.com', '/directory/to/save/to', 'filename'
+  
+If you provide an invalid URL, or something goes wrong, Portrait will raise an exception
