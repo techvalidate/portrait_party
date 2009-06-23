@@ -7,8 +7,8 @@ First, setup the Portrait class with your server and credentials
   Portrait.url "portrait.mydomain.com"
   Portrait.authorize 'username', 'password'
   
-The fire away:
+Then fire away:
 
-  Portrait.capture 'http://domain.tocaputure.com', '/directory/to/save/to', 'filename'
+  Portrait.capture 'http://domain.tocapture.com', '/directory/to/save/to', 'filename.png'
   
 If you provide an invalid URL, or something goes wrong, Portrait will raise an exception
