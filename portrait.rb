@@ -21,6 +21,7 @@ class Portrait
     portrait = Portrait.post '/', :query=>{:url=>url}
     image = open "#{default_options[:base_uri]}#{portrait['site']['image_url']}"
     FileUtils.cp image.path, "#{dir}/#{filename}"
+    return "#{dir}/#{filename}"
   rescue Net::HTTPFatalError
     raise 'Invalid url'
   end
